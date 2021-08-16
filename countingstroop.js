@@ -7,7 +7,7 @@ var preload = {
   type: 'preload',
   images: ['img/1.png', 'img/2.png']
 }
-timeline.push(preload);
+timeline.push(preload);4
 
 /* define welcome message trial */
 var welcome = {
