@@ -5,9 +5,9 @@ var timeline = [];
 var repo_site = "https://dvitaa.github.io/countingstroop/";
 var preload = {
   type: 'preload',
-  images: ['img/1.png', 'img/2.png']
+  images: [repo_site + 'img/1.png', repo_site + 'img/2.png']
 }
-timeline.push(preload);4
+timeline.push(preload);
 
 /* define welcome message trial */
 var welcome = {
@@ -90,4 +90,13 @@ var debrief_block = {
 };
 timeline.push(debrief_block);
 
+
+/* start the experiment */
+
+jsPsych.init({
+  timeline: timeline,
+  on_finish: function () {
+    jsPsych.data.displayData();
+  }
+});
 
