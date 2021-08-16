@@ -90,9 +90,4 @@ var debrief_block = {
 };
 timeline.push(debrief_block);
 
-jsPsych.init({
-  timeline: timeline,
-  on_finish: function () {
-    jsPsych.data.displayData();
-  }
-});
+
