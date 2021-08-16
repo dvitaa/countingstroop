@@ -9,18 +9,13 @@
   <script src="jpsych-6.3.1/plugins/jspsych-image-keyboard-response.js"></script>
   <script src="jpsych-6.3.1/plugins/jspsych-preload.js"></script>
   <link rel="stylesheet" href="jpsych-6.3.1/css/jspsych.css">
-  <script src="countingstroop.js"></script>
+  <script src= "https://dvitaa.github.io/countingstroop/countingstroop.js"></script>
 </head>
   
-<body></body>
 
-<script>
-/* start the experiment */
-jsPsych.init({
-  timeline: timeline,
-  on_finish: function () {
-    jsPsych.data.displayData();
-  }
-});
-</script>
+<body>
+    <div id='display_stage_background'></div>
+    <div id='display_stage'></div>
+</body>
+
 </html>

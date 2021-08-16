@@ -34,8 +34,8 @@ timeline.push(instructions);
 
 /* test trials */
 var test_stimuli = [
-  { stimulus: "https://dvitaa.github.io/countingstroop/" + "img/1.png", correct_response: '4' },
-  { stimulus: "https://dvitaa.github.io/countingstroop/" + "img/2.png", correct_response: '4' }
+  { stimulus: "https://dvitaa.github.io/countingstroop/img/1.png", correct_response: '4' },
+  { stimulus: "https://dvitaa.github.io/countingstroop/img/2.png", correct_response: '4' }
 ];
 
 var fixation = {
@@ -90,7 +90,6 @@ var debrief_block = {
 };
 timeline.push(debrief_block);
 
-/* start the experiment */
 jsPsych.init({
   timeline: timeline,
   on_finish: function () {
