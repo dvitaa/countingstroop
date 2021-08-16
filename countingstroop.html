@@ -18,4 +18,16 @@
     <div id='display_stage'></div>
 </body>
 
+
+<script>
+/* start the experiment */
+jsPsych.init({
+  timeline: timeline,
+  on_finish: function () {
+    jsPsych.data.displayData();
+  }
+});
+</script>
+</html>
+
 </html>
