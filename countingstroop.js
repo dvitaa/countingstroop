@@ -4,7 +4,7 @@ var timeline = [];
 /* preload images */
 var repo_site = "https://dvitaa.github.io/countingstroop/";
 var preload = {
-  type: 'preload',
+  type: "preload",
   images: [repo_site + 'img/1.png', repo_site + 'img/2.png']
 }
 timeline.push(preload);
@@ -26,7 +26,7 @@ var instructions = {
     <div style='<img src= '+ "https://dvitaa.github.io/countingstroop/" + 'img/1.png'></img>"
     <p class='small'><strong>Press the "4" number key</strong></p></div>" +
     </div>" +
-    <p>Press any key to begin.</p> `,
+    <p>Press any key to begin.</p>`,
   post_trial_gap: 2000
 }; 
 
