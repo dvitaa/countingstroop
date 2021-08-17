@@ -3,24 +3,14 @@
 
 <head>
   <title>Stroop Task</title>
-  <script src="https://dvitaa.github.io/jspsych/jspsych.js"></script>
-  <script src="https://dvitaa.github.io/jspsych/plugins/jspsych-html-keyboard-response.js"></script>
-  <script src="https://dvitaa.github.io/jspsych/plugins/jspsych-image-keyboard-response.js"></script>
-  <link rel="stylesheet" href="https://dvitaa.github.io/jspsych/css/jspsych.css"></link>
+  <script src="jspsych-6.1.0/jspsych.js"></script>
+    <script src="jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
+    <link rel="stylesheet" href="jspsych-6.1.0/css/jspsych.css"></link>
   <script src= "https://dvitaa.github.io/countingstroop/countingstroop.js"></script>
 </head>
   
 <body></body>
-
-<script>
-
-jsPsych.init({
-  timeline: timeline,
-  on_finish: function () {
-    jsPsych.data.displayData();
-  }
-});
-</script>
 
 <body>
 <div>
@@ -61,5 +51,14 @@ jsPsych.init({
   <div id='display_stage'></div>
 </body>
 
+<script>
+
+  jsPsych.init({
+    timeline: timeline,
+    on_finish: function () {
+      jsPsych.data.displayData();
+    }
+  });
+  </script>
 
 </html>
