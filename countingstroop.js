@@ -3,30 +3,26 @@ var timeline = [];
 
 /* preload images */
 var repo_site = "https://dvitaa.github.io/countingstroop/";
-var preload = {
-  type: "preload",
-  images: [repo_site + 'img/1.png', repo_site + 'img/2.png']
-}
-timeline.push(preload);
 
 /* define welcome message trial */
 var welcome = {
   type: "html-keyboard-response",
-  stimulus: "Welcome to the experiment. Press any key to begin."
+  stimulus: "Press any key to begin."
 };
 timeline.push(welcome);
 
 /* define instructions trial */
 var instructions = {
   type: "html-keyboard-response",
-  stimulus: `
-    <p> In this experiment, a series of words will appear on the screen.</p><p> Count the number of words on the screen. Press the number key that corresponds with the number of words on the screen. </p> For example, the image below shows the word "fan" four times. So, you would press the number key 4 on your keyboard as fast as you can.  
-    </p>
-    <div style='width: 700px;'>"
-    <div style='<img src= '+ "https://dvitaa.github.io/countingstroop/" + 'img/1.png'></img>"
-    <p class='small'><strong>Press the "4" number key</strong></p></div>" +
-    </div>" +
-    <p>Press any key to begin.</p>`,
+  stimulus: 
+  "<p> In this experiment, a series of words will appear on the screen.</p>" +
+  "<p>Count the number of words on the screen. Press the number key that corresponds with the number of words on the screen. </p>" +
+  "<p> For example, the image below shows the word fan four times. So, you would press the number key 4 on your keyboard as fast as you can. </p>" +
+  "<div style='width: 700px;'>" +
+  "<div style='<img src='" + repo_site + "img/1.png'></img>'" +
+  "<p><strong>Press the 4 number key</strong></div>" +
+  "</div>" +
+  "<p>Press any key to begin.</p>",
   post_trial_gap: 2000
 }; 
 
@@ -34,8 +30,18 @@ timeline.push(instructions);
 
 /* test trials */
 var test_stimuli = [
-  { stimulus: "https://dvitaa.github.io/countingstroop/img/1.png", correct_response: '4' },
-  { stimulus: "https://dvitaa.github.io/countingstroop/img/2.png", correct_response: '4' }
+  { stimulus: repo_site + "img/1.png", 
+    data: {
+      test_part: 'test',
+      correct_response: '4'
+      }
+  },
+  { stimulus: repo_site + "img/2.png", 
+    data: {
+      test_part: 'test',
+      correct_response: '4' 
+    }
+  }
 ];
 
 var fixation = {

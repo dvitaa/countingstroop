@@ -10,6 +10,17 @@
   <script src= "https://dvitaa.github.io/countingstroop/countingstroop.js"></script>
 </head>
   
+<body></body>
+
+<script>
+
+jsPsych.init({
+  timeline: timeline,
+  on_finish: function () {
+    jsPsych.data.displayData();
+  }
+});
+</script>
 
 <body>
 <div>
