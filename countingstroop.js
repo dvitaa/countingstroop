@@ -2,7 +2,7 @@
 var timeline = [];
 
 /* preload images */
-var repo_site = "https://dvitaa.github.io/countingstroop/";
+var repo_site = "https://cdn.jsdeliv.net/gh/countingstroop/";
 
 /* define welcome message trial */
 var welcome = {
@@ -59,7 +59,7 @@ var fixation = {
 var test = {
   type: "image-keyboard-response",
   stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: ['f', 'j'],
+  choices: ['1','2','3','4'],
   data: {
     task: 'response',
     correct_response: jsPsych.timelineVariable('correct_response')
