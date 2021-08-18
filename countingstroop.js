@@ -2,7 +2,7 @@
 var timeline = [];
 
 /* preload images */
-var repo_site = "https://cdn.jsdelivr.net/gh/dvitaa/countingstroop/";
+var repo_site =  "https://dvitaa.github.io/countingstroop/";
 
 /* define welcome message trial */
 var welcome = {
