@@ -19,7 +19,7 @@ var instructions = {
   "<p>Count the number of words on the screen. Press the number key that corresponds with the number of words on the screen. </p>" +
   "<p> For example, the image below shows the word fan four times. So, you would press the number key 4 on your keyboard as fast as you can. </p>" +
   "<div style='width: 700px;'>" +
-  "<div style=><img src='img/1.png'></img>" +
+  "<div style='float: middle;'><img src='img/1.png'></img>" +
   "<p><strong>Press the 4 number key</strong></div>" +
   "</div>" +
   "<p>Press any key to begin.</p>",
@@ -33,13 +33,13 @@ var test_stimuli = [
   { stimulus: repo_site + "img/1.png", 
     data: {
       test_part: 'test',
-      correct_response: '4'
+      correct_response: 4
       }
   },
   { stimulus: repo_site + "img/2.png", 
     data: {
       test_part: 'test',
-      correct_response: '4' 
+      correct_response: 4
     }
   }
 ];
